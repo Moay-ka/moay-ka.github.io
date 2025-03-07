@@ -1,0 +1,1221 @@
+*{
+  cursor: url(../image/genshin.69b4156.png),auto;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.arrow{
+  width: 90%;
+  margin: 0 auto;
+}
+.arrow img{
+  width: 100%;
+}
+
+.parrow{
+  width: 100%;
+}
+
+.parrow img{
+  width: 100%;
+}
+
+.天賦arrow{
+  width: 90%;
+  margin:220px auto 20px  auto;
+}
+
+.天賦arrow img{
+  width: 100%;
+}
+
+:root{
+  scroll-padding: 110px;
+}
+
+html{
+  scroll-behavior: smooth; /*ページ内リンクがスクロールになる */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body{ 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(90deg, #002788, #2c90ac 50%, #002788);
+  ;
+}
+
+header{
+  background-color: rgb(63, 63, 63);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+header a{
+  width: 70px;
+  margin:15px auto 15px 15px;
+}
+
+header a img{
+  width: 100%;
+}
+
+header p{
+  color: white;
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.indexmain{
+  display: flex;
+  width: 100%;
+  /* width: 1370px; */
+  margin-top:110px;
+
+}
+
+/* .indeximg{
+  width: 100%;
+  margin: 0;
+}
+
+.indeximg img{
+  width: ;
+  height:auto ;
+} */
+
+.tatebox{
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 110px;
+  left: 15%;
+  z-index: 1;
+}
+
+.tatebox ul{
+  margin-left: 20px;
+}
+
+.tatebox ul li{
+  margin: 10px 0;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.tatebox ul li a{
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+  text-decoration:none;
+}
+
+.tatebox ul li a::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: .3s;
+}
+
+.tatebox ul li a:hover::after{
+  width: 100%;
+
+}
+
+.yokobox{
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.yokobox div{
+  background-color: rgba(255, 255, 255, 0.4);
+  /* display: flex; */
+  margin-left: 260px;
+  margin-bottom: 10px;
+  width: 800px;
+  height: auto;
+  padding: 10px 0 10px 0;
+}
+
+.yokobox div a{
+  color:#2589d0 ;
+}
+
+.yokobox h1{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin: 0 auto 0 20px;
+  color: white;
+  text-shadow: 0 0 5px blue;
+}
+
+.yokobox p{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.toper{
+  
+}
+
+.button-54 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 180px;
+  height: 40px;
+  margin:auto 10px 0 auto;
+  padding-right: 50px;
+  border: 1px solid #2589d0;
+  border-radius: 5px;
+  z-index: 1;
+  color: #2589d0;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button-54::after {
+  position: absolute;
+  right: 2em;
+  transform: translateY(-50%);
+  transform-origin: left;
+  width: 2em;
+  height: .5em;
+  background-color: #2589d0;
+  clip-path: polygon(0 100%, 100% 100%, 70% 40%, 70% 90%, 0% 90%);
+  content: '';
+  transition: transform .3s;
+  
+}
+
+.button-54:hover::after {
+  transform: translateY(-50%) scaleX(1.4);
+  
+}
+
+.button-54 a{
+  font-family: "Shippori Mincho", serif;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+/* モーション */
+/* .tab-1 {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.tab-1 > label {
+  flex: 1 1;
+  order: -1;
+  min-width: 70px;
+  padding: .7em 1em .5em;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0;
+  background-color: #e9f0f6;
+  color: #535353;
+  font-size: .9em;
+  text-align: center;
+  
+}
+
+.tab-1 > label:hover {
+  opacity: .8;
+}
+
+.tab-1 input {
+  display: none;
+}
+
+.tab-1 > div {
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+  background-color: #fff;
+}
+
+.tab-1 label:has(:checked) {
+  background-color: #fff;
+  border-color: #2589d0 #f0f0f0 #fff;
+  border-style: solid;
+  border-width: 4px 1px 1px;
+  border-radius: 5px;
+  color: #333333;
+}
+
+.tab-1 label:has(:checked) + div {
+  display: block;
+} */
+
+
+
+
+#opv-wrap {
+  animation: fadeIn .5s ease;
+}
+
+#opv-wrap.playEnd {
+  animation: fadeOut 1.5s ease;
+}
+
+video#opv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: bottom;
+  z-index: 10;
+}
+
+#page-wrap {
+  height: 100vh;
+  overflow-y: hidden;
+  animation: fadeIn 0s ease;
+}
+
+#page-wrap.startView {
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+.nav{
+  margin: 20px 20px auto auto;
+  z-index: 4;
+}
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 52px;
+  align-items: center;
+  position: relative;
+  z-index: 5;/* 重なり順を一番上にする */
+  
+  
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 50px;
+  border-radius: 3px;
+  background: rgb(206, 206, 206);
+  transition: 0.5s;
+  position: absolute;
+  z-index: 4;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 16px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 16px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 4;
+  background: rgb(35, 35, 35);
+  transition: .5s;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  right: 0;/* メニューを画面に入れる */
+}
+
+.nav_item{
+  margin: 20px 0;
+}
+
+.nav_item a{
+  font-size: 20px;
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav_item a:hover{
+  color: rgb(0, 208, 255);
+}
+
+.motion video{
+  width: 300px;
+}
+
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+
+
+/* 性能解説 */
+
+.abilitymain{
+  width: 100%;
+  margin-top:110px;
+}
+
+.概論{
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px 20px 5px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.概論 h1{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.概論 p{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.目次{
+  width: 15%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.目次 h1{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+}
+
+.目次 ul{
+  width: 50%;
+  margin-left: 30px;
+}
+
+.目次 ul a li{
+  margin: 10px auto;
+}
+
+.目次 ul a{
+  /* display: inline-block; */
+  position: relative;
+  transition: .3s;
+  text-decoration:none;
+}
+
+.目次 ul a p{
+  color: black;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.目次 ul a::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: .3s;
+}
+
+.目次 ul a:hover::after{
+  width: 100%;
+}
+
+
+.ステータス{
+  width: 100%;
+  position: relative;
+}
+
+.ステータス h1{
+  color: white;
+  font-size: 40px;
+  text-shadow:0 0 5px skyblue;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.status{
+  width: 100%;
+  position: relative;
+}
+
+.status img{
+  width: 700px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.accordion-003 {
+    max-width: 500px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid #d0d0d0;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.accordion-004{
+  max-width: 500px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid #d0d0d0;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.accordion-003 summary,.accordion-004 summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.accordion-003 summary::-webkit-details-marker,.accordion-004 summary::-webkit-details-marker{
+    display: none;
+}
+
+.accordion-003 summary::after,.accordion-004 summary::after{
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    content: '';
+    transition: transform .3s;
+}
+
+.accordion-003[open] summary::after,.accordion-004[open] summary::after{
+    transform: rotate(225deg);
+}
+
+.accordion-003 p,.accordion-004 p{
+  transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: .3em 2em 1.5em;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  transition: transform .5s, opacity .5s;
+}
+
+.accordion-003[open] p,.accordion-004[open] p{
+    transform: none;
+    opacity: 1;
+}
+
+
+.突破{
+  width: 90%;
+  margin:20px  auto;
+  position: relative;
+}
+
+.突破 h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.突破 p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  width: 350px;
+  height: 171.2px;
+  position: absolute;
+  right: 0;
+}
+
+.突破 img,.天賦要素 img{
+  width: 100%;
+}
+
+.素材{
+  
+}
+
+.素材 img{
+  
+  width: 30px;
+
+}
+
+.天賦{
+  width: 90%;
+  margin: 20px  auto;
+  
+}
+
+.天賦 h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.tab-4 h2{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-4 p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tab-4 label img{
+  display: flex;
+  width: 100px;
+}
+
+.tab-4 > label {
+  /* flex: 1 1; */
+  order: -1;
+  position: relative;
+  width: 100px;
+  padding: .7em 1em;
+  /* background-color: rgba(0, 0, 255, 0); */
+  border-radius: 50%;
+}
+
+.tab-4 > label:hover,
+.tab-4 label:has(:checked) {
+  box-shadow:0 0 10px white;
+  
+}
+
+.tab-4 label:has(:checked)::before {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.tab-4 input {
+  display: none;
+}
+
+.tab-4 > div {
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+}
+
+.tab-4 label:has(:checked) + div {
+  display: block;
+}
+
+/* 命ノ星座 */
+.命ノ星座{
+  width: 90%;
+  margin:20px  auto;
+}
+
+.命ノ星座 h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-5 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.tab-5 h2{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-5 p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tab-5 label img{
+  display: flex;
+  width: 100px;
+}
+
+.tab-5 > label {
+  /* flex: 1 1; */
+  order: -1;
+  position: relative;
+  width: 100px;
+  padding: .7em 1em;
+  /* background-color: rgba(0, 0, 255, 0); */
+  
+  border-radius: 50%;
+}
+
+.tab-5 > label:hover,
+.tab-5 label:has(:checked) {
+  box-shadow:0 0 10px white;
+  
+}
+
+.tab-5 label:has(:checked)::before {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.tab-5 input {
+  display: none;
+}
+
+.tab-5 > div {
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+}
+
+.tab-5 label:has(:checked) + div {
+  display: block;
+}
+
+
+/* おすすめビルド */
+
+.buildmain{
+  width: 100%;
+  margin-top:110px;
+}
+
+.武器{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.武器 h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-6 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+.tab-6 p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+}
+
+.tab-6 img{
+  width: 100%;
+}
+
+
+
+.tab-6 > label {
+  /* flex: 1 1; */
+  order: -1;
+  position: relative;
+  width: 100px;
+  padding: .7em 1em;
+  /* background-color: rgba(0, 0, 255, 0); */
+  
+ 
+}
+
+.tab-6 > label:hover,
+.tab-6 label:has(:checked) {
+  box-shadow:0 0 10px white,inset 0 0 10px white;
+  border-radius: 20%;
+}
+
+.tab-6 label:has(:checked)::before {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.tab-6 input {
+  display: none;
+}
+
+.tab-6 > div {
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+}
+
+.tab-6 label:has(:checked) + div {
+  display: block;
+}
+
+.聖遺物{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.聖遺物 h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.聖遺物 img{
+  width: 100%;
+  margin: 0;
+}
+
+.パーティ{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.パーティ h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.party{
+  margin-top: 50px;
+}
+
+.party_contents{
+  width: 100%;
+}
+
+.party_contents h2{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.party_contents p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+}
+
+
+
+.party_img{
+  width: 100%;
+}
+
+.party_img ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.party_img img{
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.277);
+}
+
+.pimg img{
+  width: 30px;
+}
+
+
+/* フッター */
+
+footer{
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+  margin: 0;
+  padding-top: 10px;
+}
+
+footer div{
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer h3{
+  color: white;
+  text-align: center;
+}
+
+footer ul{
+  display: flex;
+  height: 55px;
+  width: 400px;
+  margin: 0 auto;
+  
+}
+
+footer ul li{
+  margin: 0 20px;
+}
+
+footer ul li a img{
+  width: 50px;
+}
+
+footer ul li a img:hover{
+  width: 55px;
+}
+
+footer p{
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+/* キャラストーリー */
+
+.storymain{
+  width: 100%;
+  margin-top:110px;
+}
+
+.storymain h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+.story-section{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.story-section h2{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.story-section p{
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* 関連動画 */
+
+.moviemain{
+  width: 100%;
+  margin-top:110px;
+}
+
+.moviemain .arrow{
+  margin: 20px auto;
+}
+
+.moviemain h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.mo-contents{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.mo-contents h2{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 24px;
+}
+
+.mo-contents iframe{
+  width: 100%;
+  height: 563px;
+}
+
+.mo-contents i{
+  margin-left: 5px;
+}
+
+.button-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  padding: .9em 3em .9em 2em;
+  border: 1px solid #2589d0;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2589d0;
+  font-size: 1em;
+}
+
+.button-5::after {
+  position: absolute;
+  right: 2em;
+  transform: translateY(-50%);
+  transform-origin: left;
+  width: 2em;
+  height: .5em;
+  background-color: #2589d0;
+  clip-path: polygon(0 100%, 100% 100%, 70% 40%, 70% 90%, 0% 90%);
+  content: '';
+  transition: transform .3s;
+}
+
+.button-5:hover::after {
+  transform: translateY(-50%) scaleX(1.4);
+}
+
+/* アートギャラリー */
+
+.artmain{
+  width: 100%;
+  margin-top:110px;
+}
+
+.artmain h1{
+  color: white;
+  text-shadow:0 0 5px skyblue;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+}
+
+.artall{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artsec{
+  width: 32%;
+}
+
+.artsec img{
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* 七聖召喚 */
+
+.dice{
+  display: flex;
+}
+
+.dice img{
+  width: 30px;
+}

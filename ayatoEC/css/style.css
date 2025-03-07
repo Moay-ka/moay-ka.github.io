@@ -1,0 +1,347 @@
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+:root{
+  scroll-padding: 110px;
+}
+
+html{
+  scroll-behavior: smooth; /*ページ内リンクがスクロールになる */
+  margin: 0;
+}
+
+body{ 
+  margin: 0;
+  width: 100%;
+  /* background-image: url(../image/backimg.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+/* ヘッダー */
+header{
+  display: flex;
+  background-color: rgb(198, 198, 198);
+  width: 100%;
+  height: 150px;
+}
+
+header h3,header p{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+header h3{
+  font-family: "Yuji Syuku", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header p{
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icon{
+  margin: auto 20px;
+}
+
+.icon img{
+  width: 100px;
+  display: flex;
+  margin: 0 auto 0 0;
+  
+
+}
+
+.headerlink{
+  margin: auto 20px auto auto;
+}
+
+.animate{
+  display: flex;
+  justify-content: space-between;
+}
+
+.animate i{
+  font-size: 30px;
+  margin: 10px;
+}
+.animate img{
+  width: 50px;
+}
+
+main{
+  display: flex;
+}
+
+.goods{
+  width: 100%;
+}
+
+.goods h1{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0;
+  margin-top: 50px;
+  border-bottom: 2px solid cyan;
+}
+
+.category{
+  background-color: rgb(164, 252, 255);
+  width: 300px;
+}
+
+.category h2{
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.category ul li a{
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.category ul li a{
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+  text-decoration:none;
+}
+
+.category ul li a::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: .3s;
+}
+
+.category ul li a:hover::after{
+  width: 100%;
+
+}
+
+.retu{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.gyou{
+  width: 300px;
+  background-color: rgb(165, 233, 240);
+  margin-top: 30px;
+}
+
+.gyou img{
+  width: 90%;
+  display: flex;
+  margin:10px auto;
+
+}
+
+.gyou h3{
+  text-align: center;
+}
+
+.gyou p{
+  text-align: center;
+  font-size: 15px;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-55 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: .9em 2em;
+  border: none;
+  border-radius: 25px;
+  background-color: #0033ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.button-55::after {
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+  content: '';
+}
+
+.button-55:hover {
+  background-color: #2900c0;
+}
+
+
+
+
+
+
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+footer{
+  background-color: rgb(198, 198, 198);
+  width: 100%;
+  
+  padding-top: 20px;
+  margin: 0;
+}
+
+.footcont{
+  display: flex;
+  width: 860px;
+  margin: 0px auto;
+}
+
+.footcont img{
+  width: 300px;
+}
+
+.footer-2__copyright{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* inside */
+
+.insidemain{
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.insideimg,.insidetxt{
+  width: 600px;
+  margin: 0 auto;
+  
+}
+
+.insideimg img{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.insidetxt h2{
+  font-size: 22px;
+}
+
+.price{
+  color: blue;
+  font-size: 18px;
+}
+
+.text{
+  font-size: 16px;
+}
+
+
+
+.selectbox-3 {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.selectbox-3::after {
+  position: absolute;
+  right: 15px;
+  width: 10px;
+  height: 7px;
+  background-color: #535353;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: '';
+  pointer-events: none;
+}
+
+.selectbox-3 select {
+  appearance: none;
+  min-width:  100%;
+  height: 2.8em;
+  padding: .4em calc(.8em + 30px) .4em .8em;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 1em;
+  cursor: pointer;
+  
+}
+
+.button-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .9em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.button-2:hover {
+  background-color: rgba(0, 128, 255, 0.558);
+}
+
+.box{
+  width: 100%;
+  margin: 20px 0;
+}
